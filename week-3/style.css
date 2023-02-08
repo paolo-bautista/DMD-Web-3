@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+    background-color: lightgrey;
+    font-family: 'Lora', serif;
+}
+.container {
+    text-align: center;
+}
+#top h1 {
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 20px 0 0 0
+}
+#top h2{
+    font-weight: 50;
+}
+
+#book{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.page{
+    padding: 0 5% 5% 5%;
+    background-color: white;
+    margin-bottom: 10px;
+    box-shadow: 0 15px 30px 2.5px black
+}
+.cursive{
+    font-family: 'Great Vibes', cursive;
+    border-bottom: 3px solid black;
+}
+.contact {
+    display: flex;
+    gap: 20px;
+    border-bottom: .5px solid black;
+}
+.contactText{
+    font-size: 1rem;
+    width: 100%
+}
+#divHolder{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+}
