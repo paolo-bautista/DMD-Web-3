@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Pokemon</title>
+
+    
+<style type="text/css">
+    body {
+      color: gainsboro;
+      background-color: steelblue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    li, a {
+        text-decoration: none;
+        color: blanchedalmond;
+        font-size: 20px;
+    }
+    li {
+        list-style-type: none;
+        margin-bottom: 10px;
+    }
+
+
+  </style>
+</head>
+<body>
+    <h1>
+        See all the Pokemon!
+    </h1>
+    <ul>    
+       <% for(let i=0; i<pokemonList.length; i++) { %>
+            <li>
+                <a href="/pokemon/<%= i %>">
+                    <%= pokemonList[i].name.charAt(0).toUpperCase() + pokemonList[i].name.slice(1) %>
+                </a>
+            </li>
+        <% } %>
+    </ul>
+</body>
+</html>
