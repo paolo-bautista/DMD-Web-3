@@ -1,0 +1,100 @@
+
+html, body {
+    background-color: darkkhaki;
+    text-align: center;
+    overflow: hidden
+}
+
+.main-menu {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:500px;
+    height: 110vh;
+    text-align: center;
+}
+#error-message {
+    padding: 10px;
+    background-color: #ff7f7f;
+    width: 30%;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    left: 21em;
+}
+
+#nameInput {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.buttonSubmit {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#buttonSubmit:hover {
+    background-color: lightblue;
+
+}
+
+.game {
+    display: none;
+    /* flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
+    gap:0; */
+}
+.line {
+    border-color: black;
+    width: 100%;
+}
+
+#userName {
+    margin-bottom: 0;
+}
+#computerName {
+    margin: 0;
+}
+#rock, #paper, #scissors {
+    width: 150px;
+    height: 150px;
+}
+#choose2 {
+    margin-bottom: 0;
+}
+#images {
+}
+#userChoice {
+    margin-bottom: 0;
+}
+#computerImages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#paper2, #rock2, #scissors2 {
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+
+#results{
+    border-style: solid;
+    width: 20%;
+    display: none;
+}
+#decide {
+    margin-bottom: 0;
+}
+#score {
+    display: none;
+}

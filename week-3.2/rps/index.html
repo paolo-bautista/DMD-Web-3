@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Reprised</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-menu">
+            <h1>
+                Paolo's Rock Paper Scissors
+            </h1>
+            <form>
+                <input placeholder="Enter Name:" type="text" value="" id="nameInput">
+                <button class="buttonSubmit" type="button">START GAME</button>
+                <div id="error-message">Error: Input field is empty!</div>
+            </form> 
+        </div>
+
+        <div class="game">
+            <h1 id="userName"></h1>
+            <h2 id="choose">Choose Your Weapon 😏</h2>
+            <div id="images">
+                <img id="paper" src="/images/paper.png">
+                <img id="rock" src="/images/rock.png" alt="" srcset="">
+                <img id="scissors" src="/images/scissors.png" alt="" srcset="">
+            </div>
+            <h3 id="userChoice"></h3>
+            <hr class="line">
+            <h1 id="computerName"></h1>
+            <h3 id="computerChoice"></h3>
+            <div id="computerImages">
+                <img id="paper2" src="/images/paper.png">
+                <img id="rock2" src="/images/rock.png" alt="" srcset="">
+                <img id="scissors2" src="/images/scissors.png" alt="" srcset="">
+                <h2 id="choose2"></h2>
+            </div>
+
+            <div id="score">
+                <button class="buttonSubmit" id="reset">Reset Score</button>  
+                <h1 id="decide"></h1>
+                <button class="buttonSubmit" id="playA">Play Again</button>
+            </div>
+
+            <div id="results">
+                <h3 id="wins"></h3>
+                <h3 id="losses"></h3>
+                <h3 id="ties"></h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
